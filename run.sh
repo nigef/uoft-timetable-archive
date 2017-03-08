@@ -8,7 +8,7 @@ git pull --rebase
 
 SCRAPENAME=$(date +%s).json
 
-curl --silent "https://timetable.iit.artsci.utoronto.ca/api/courses?org=&code=&section=${SECTION}&studyyear=&daytime=&weekday=&prof=&breadth=&online=&waitlist=&available=&title=" > $ACADEM_SESSION/$SCRAPENAME 
+curl --silent "https://timetable.iit.artsci.utoronto.ca/api/20169/courses?org=&code=&section=${SECTION}&studyyear=&daytime=&weekday=&prof=&breadth=&online=&waitlist=&available=&title=" > $ACADEM_SESSION/$SCRAPENAME 
 
 ln $ACADEM_SESSION/$SCRAPENAME $ACADEM_SESSION/latest.json
 
